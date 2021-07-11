@@ -9,9 +9,14 @@ namespace Restaurante_InyeccionDependencias.Platos
 {
     public class Chuleton : IPlato
     {
+        public string Tipo { get; set; }
+        public Chuleton(string tipo)
+        {
+            this.Tipo = tipo;
+        }
         public void Cocinar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Se cocinó un chuletón de " + Tipo + " que hasta los veganos se lo quieren comer.");
         }
     }
 }

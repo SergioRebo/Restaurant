@@ -9,9 +9,14 @@ namespace Restaurante_InyeccionDependencias.Platos
 {
     public class Canelones : IPlato
     {
+        public string Tipo { get; set; }
+        public Canelones(string tipo)
+        {
+            this.Tipo = tipo;
+        }
         public void Cocinar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Se hicieron unos canelones de " + Tipo + " como los de la abuela.");
         }
     }
 }
