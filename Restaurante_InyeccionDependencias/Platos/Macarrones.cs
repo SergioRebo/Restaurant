@@ -9,9 +9,14 @@ namespace Restaurante_InyeccionDependencias.Platos
 {
     public class Macarrones : IPlato
     {
+        public string Tipo { get; set; }
+        public Macarrones(string tipo)
+        {
+            this.Tipo = tipo;
+        }
         public void Cocinar()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Se hicieron unos macarrones " + Tipo);
         }
     }
 }
