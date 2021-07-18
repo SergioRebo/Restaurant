@@ -23,7 +23,9 @@ The Backend Tier is separated in different layers:
 ### DEVELOPMENT
 -----------------------------------
 To manage this project, the **SOLID** Principles have been followed.For example, the Single-Responsibility - Principle has been applied in the Adapter Pattern and also Interface - Segregation - Principle to separate the ICrud interface in different interfaces, each of them having one of the ICrud funcionalities, in order to avoid coupling. Another example of Solid Principle will be dependence injections using Autofac, in orther to avoid strong coupling in our project. 
+
 In order to follow DRY Principles (Don't Repeat Yourself), we use Generics so that we could write reusable code. However, we created the ICrud interfaces both in Infrastructure and AppService Layer as we wanted those interfaces to be specific for their layers.
+
 CleanCode and YAGNI (Your Aren't Gonna Need It) Principals have also been used.
 
 
