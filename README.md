@@ -9,6 +9,7 @@ The porpuse of this project is to learn how to manage data treatment in a txt fi
 ### DEVELOPMENT
 -----------------------------------
 This project has been built using the DDD Arquitecture where it was divided in two different tiers, Presentation Tier and Backend Tier. You can see the structure [here](https://github.com/SergioRebo/Restaurant/blob/master/Assets/VuelingExam.png). 
+
 The presentation tier is what the client will see while the Backend Tier is where we built our service. 
 The Backend Tier is separated in different layers:
 - Distributed Service Layer: Where our service is.
