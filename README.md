@@ -17,14 +17,14 @@ The Backend Tier is separated in different layers:
 - Distributed Service Layer: Where our service is.
 - AppService Layer: This will be our Business and Logic layer.
 - Domain Layer: This layer is where our entities will be. Besides, another project has been created in order to apply log using the Adapted Pattern. You can see our Adapted Pattern structure in the following [image](https://github.com/SergioRebo/Restaurant/blob/master/Assets/AdapterPatternVueling.png).
-- Infrastructure Layer: In this layer we have the repositories and all the data treatment.
+- Infrastructure Layer: In this layer is where the repositories and the data treatment are.
 
 
 ### DEVELOPMENT
 -----------------------------------
-To manage this project, we followed the **SOLID** Principles. We used the Single-Responsibility - Principle with the Adapter Pattern and Interface - Segregation - Principle to separate the ICrud interface in different interfaces, each one having one of the ICrud funcionalities, in order to avoid coupling and to make an easier code to understand. Other example of Solid Principle will be the dependnce injections using Autofac, in orther to avoid strong coupling in our project. 
-In order to follo DRY Principles (Don't Repeat Yourself), we use Generics so that we could reusable code. However, we created the ICrud interfaces both in Infrastructure Layer and AppService Layer as we wanted those interfaces to be specific for their layers.
-We also followed CleanCode and YAGNI (Your Aren't Gonna Need It) Principals.
+To manage this project, the **SOLID** Principles have been followed.For example, the Single-Responsibility - Principle has been applied in the Adapter Pattern and also Interface - Segregation - Principle to separate the ICrud interface in different interfaces, each of them having one of the ICrud funcionalities, in order to avoid coupling. Another example of Solid Principle will be dependence injections using Autofac, in orther to avoid strong coupling in our project. 
+In order to follow DRY Principles (Don't Repeat Yourself), we use Generics so that we could write reusable code. However, we created the ICrud interfaces both in Infrastructure and AppService Layer as we wanted those interfaces to be specific for their layers.
+CleanCode and YAGNI (Your Aren't Gonna Need It) Principals have also been used.
 
 
 ### TESTING
